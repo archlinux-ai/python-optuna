@@ -2,7 +2,7 @@
 # Maintainer: Daniel Bershatsky <bepshatsky@yandex.ru>
 pkgname=python-optuna
 _pkgname=${pkgname#python-}
-pkgver=3.1.1
+pkgver=3.2.0
 pkgrel=1
 pkgdesc="A hyperparameter optimization framework"
 arch=('any')
@@ -19,7 +19,7 @@ depends=(
 )
 makedepends=('python-build' 'python-installer' 'python-setuptools' 'python-wheel')
 source=("$_pkgname-$pkgver.tar.gz::https://github.com/optuna/$_pkgname/archive/v$pkgver.tar.gz")
-sha256sums=('4e760b067a6234a556e9a707fb47483ffba5ea8bc0b23997766a23e3603b9a82')
+sha256sums=('eaf63ef73cf7b92fb25320cb9546b3a4b0bab83d911a353b7e00aa940581ddcb')
 
 build() {
     cd $_pkgname-$pkgver
