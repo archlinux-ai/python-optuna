@@ -22,8 +22,7 @@ source=("$_pkgname-$pkgver.tar.gz::https://github.com/optuna/$_pkgname/archive/v
 sha256sums=('eaf63ef73cf7b92fb25320cb9546b3a4b0bab83d911a353b7e00aa940581ddcb')
 
 build() {
-    cd $_pkgname-$pkgver
-    python -m build -n -w
+    python -m build -nw $_pkgname-$pkgver
 }
 
 package() {
